@@ -1,0 +1,2 @@
+headers=$(curl -sI https://www.google.com)
+echo "$headers"

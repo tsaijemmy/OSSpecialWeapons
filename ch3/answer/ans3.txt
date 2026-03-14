@@ -1,0 +1,2 @@
+$response = Invoke-WebRequest -Uri "https://your-website.com" -SkipCertificateCheck
+$response.Headers | Format-Table

@@ -1,0 +1,27 @@
+use strict;
+use warnings;
+use LWP::UserAgent;
+
+# 1. 建立 UserAgent 物件
+my $ua = LWP::UserAgent->new;
+$ua->timeout(10); # 設定超時
+
+# 2. 發送 GET 請求
+my $url = 'http://example.com';
+my $response = $ua->get($url);
+
+# 3. 檢查是否請求成功
+if ($response->is_success) {
+    print "--- 完整 Header 資訊 ---\n";
+    print $response->headers->as_string; # 列印所有 header
+    
+    print "\n--- 遍歷 Header ---\n";
+    # 遍歷所有 header 名稱和值
+    $response->headers->scan(sub {
+        my ($header, $value) = @_;
+        print "$header: $value\n";
+    });
+} else {
+    print "Error: " . $response->status_line;
+}
+
