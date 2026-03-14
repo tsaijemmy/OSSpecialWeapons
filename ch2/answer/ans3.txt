@@ -1,0 +1,2 @@
+Perl與bash換行字元是\n
+PowerShell換行字元是'n

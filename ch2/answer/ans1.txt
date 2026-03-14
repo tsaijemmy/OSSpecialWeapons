@@ -1,0 +1,6 @@
+執行which pwsh取得pwsh路徑，例：
+/opt/homebrew/bin/pwsh
+在ps1第一行加
+#!/opt/homebrew/bin/pwsh
+
+註：pwsh在不同版本時期可能安裝路徑也有不同，以which指令做確認。
