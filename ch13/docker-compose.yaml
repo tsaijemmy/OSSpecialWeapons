@@ -1,0 +1,17 @@
+ersion: '3.4'
+
+services:
+    dashboard:
+        image: 192.1.3.17:5000/dashboard:1.0.0
+        restart: always
+        ports:
+            - "8080:8080"
+        environment:
+            DB_URL: "10.0.7.4:1433;databaseName=TFA"
+            DB_NAME: "TFA"
+            DB_USER: "admin"
+            DB_PWD: "1qaz@WSX"
+            APP_LDAP_URL: "10.0.6.11"
+            APP_LOACL_ADMIN: "enable"
+            APP_LOCAL_ADMIN_PWD: "2wsxZAQ!"
+

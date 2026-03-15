@@ -1,0 +1,17 @@
+*
+ Definition for table TESTUTF8.T1
+ Record length: 112
+ Syskey: 0
+ Columns: 2
+ C1   64     50        0  0  0 1 0     50     50     50 0 0 0 0 1    0 1 2
+ C2   64     50       56  0  0 1 0     50     50      0 0 0 0 0 1    0 0 0
+ End of definition
+* TEST T2
+ Definition for table TESTUTF8.T2
+ Record length: 112
+ Syskey: 0
+ Columns: 2
+ C1   64     50        0  0  0 1 0     50     50     50 0 0 0 0 1    0 1 2
+ C2   64     50       56  0  0 1 0     50     50      0 0 0 0 0 1    0 0 0
+ End of definition
+

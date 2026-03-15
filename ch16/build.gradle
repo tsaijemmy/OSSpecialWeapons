@@ -1,0 +1,9 @@
+    signingConfigs {
+        defaultConfig {
+            storeFile file("D:\project\keystore")
+            storePassword "p@ssw0rd"
+            keyAlias "proj"
+            keyPassword "1qaz@WSX"
+        }
+    }
+
