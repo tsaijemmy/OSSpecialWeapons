@@ -1,0 +1,5 @@
+1. 單行指令：redis-server --port 6380
+
+2. 設於redis.conf
+port 6380
+執行：redis-server /path/to/your/redis.conf

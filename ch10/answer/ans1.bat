@@ -1,0 +1,1 @@
+schtasks /create /tn "DeleteOldLogs" /tr "D:\scripts\DelLog.bat" /sc daily /st 02:00 /rl HIGHEST

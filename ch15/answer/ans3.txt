@@ -1,0 +1,11 @@
+
+如果你不想改 /etc/passwd，但在維運腳本中需要 opuser 跑 sqlldr，最穩健的寫法是：
+
+在腳本中使用：
+
+Bash
+su - opuser -c ". ~/.profile; sqlldr control=test.ctl ..."
+在手動操作中使用：
+
+Bash
+su - opuser -c "exec bash --login"

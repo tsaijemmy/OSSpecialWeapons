@@ -1,0 +1,19 @@
+
+【PowerShell】
+# 1. 停止服務
+Stop-Service -Name "sshd" -Force
+
+# 2. 啟動服務
+Start-Service -Name "sshd"
+
+# 3. 檢查狀態
+Get-Service -Name "sshd"
+
+【DOS】
+# 停止服務
+net stop sshd
+# 或使用 sc stop sshd
+
+# 啟動服務
+net start sshd
+# 或使用 sc start sshd

@@ -1,0 +1,2 @@
+# Crontab 範例
+0 0 * * * find /var/log/jboss/ -name "*.log" -mtime +7 -exec rm -f {} \;

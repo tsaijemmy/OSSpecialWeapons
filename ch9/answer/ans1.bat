@@ -1,0 +1,1 @@
+schtasks /create /tn "FridayHourlyTask" /tr "C:\path\to\your\script.bat" /sc weekly /d FRI /st 00:00 /ri 60 /du 24:00 /f

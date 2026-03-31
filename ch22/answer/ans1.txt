@@ -1,0 +1,1 @@
+docker ps | grep tomcat | awk -F '[[:space:]]+' '{print $1}' | xargs -I {} bash -c "docker exec -t {} cat /etc/os-release

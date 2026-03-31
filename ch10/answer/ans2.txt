@@ -1,0 +1,12 @@
+# 根據名稱強行中止所有 notepad 行程
+Stop-Process -Name "notepad" -Force
+
+# 根據 PID 強行中止
+Stop-Process -Id 1234 -Force
+
+
+# 查詢特定服務狀態
+Get-Service -Name "JBossEAP6"
+
+# 模擬 queryex 顯示詳細資訊（包含 PID）
+Get-CimInstance Win32_Service -Filter "Name = 'JBossEAP6'" | Select-Object Name, State, ProcessId, StartMode

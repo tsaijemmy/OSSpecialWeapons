@@ -1,0 +1,1 @@
+redis-cli -h <第二台主機的IP> -p 7001 -c

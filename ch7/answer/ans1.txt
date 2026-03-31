@@ -1,0 +1,2 @@
+Database	S40database		K60database		啟動要早，關閉要晚
+Application	S60application	K40application	啟動要晚，關閉要早

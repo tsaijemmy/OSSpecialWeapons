@@ -1,0 +1,10 @@
+# 讀取檔案、排序並去除重複，最後存回新檔案
+Get-Content tree.txt | Sort-Object -Unique | Out-File tree_unique.txt
+
+# 進階
+# Gradle 的 Tree 通常包含縮排符號（如 +--- 或 \---），如果你想更精準地抓出 JAR 名稱 並去重，可以使用以下進階寫法：
+# 範例：過濾出包含 jar 的行，去除空白，再進行去重
+Get-Content tree.txt | 
+    Where-Object { $_ -match "\.jar" -or $_ -match ":" } | 
+    ForEach-Object { $_.Trim(" |+-\") } | 
+    Sort-Object -Unique

@@ -1,0 +1,5 @@
+在 Linux 指令中，將 -exec 改為 xargs 是為了提升處理大量檔案時的效能。-exec 會為每個檔案啟動一次 rm 行程，而 xargs 則會將檔名整合成一長串，一次交給 rm 處理
+原本：
+find /var/log -name "*.log" -mtime +7 -exec rm -f {} \;
+改寫：
+find /var/log -name "*.log" -mtime +7 | xargs rm -f

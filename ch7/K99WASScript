@@ -1,0 +1,13 @@
+#!/bin/ksh
+# K99WASScript, S99WASScript
+case "$1" in
+start)
+  /usr/IBM/WebSphere/AppServer/bin/startServer.sh server1
+  ;;
+stop)
+  /usr/IBM/WebSphere/AppServer/bin/stopServer.sh server1 -username xxxx -password yyyy
+  ;;
+*)
+  echo "Usage: $0 {start | stop}"
+  exit 1
+esac

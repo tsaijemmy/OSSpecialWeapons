@@ -1,0 +1,2 @@
+壓縮指令：Compress-Archive
+而PowerShell本身沒有壓縮加解的CmdLet，需借助.Net Framework，可參考第12章。

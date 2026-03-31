@@ -1,0 +1,1 @@
+schtasks /create /tn "HourlyEncryptLogs" /tr "powershell.exe -ExecutionPolicy Bypass -File C:\scripts\EncryptLogs.ps1" /sc hourly /mo 1 /st 00:00 /rl HIGHEST
